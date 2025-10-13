@@ -1,0 +1,21 @@
+.projeto img {
+  width: 100%;
+  height: auto;      /* imagem define a altura */
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+
+/* ===== Ajuste de hover opcional ===== */
+.projeto img:hover {
+  opacity: 0.9;             /* leve escurecimento ao passar o mouse */
+  transition: opacity 0.2s ease;
+}
+
+/* ===== Responsividade: imagens menores em telas pequenas ===== */
+@media (max-width: 600px) {
+  .projeto img {
+    height: 150px;
+  }
+}

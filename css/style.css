@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+  background-color: #007BFF;       /* azul do topo */
+  color: white;
+  text-align: center;              /* centraliza o texto */
+  padding: 30px 0;                 /* espaçamento interno */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+header nav a.menu {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+header nav a.menu:hover {
+  text-decoration: underline;
+}
+
+/* ===== Campo de busca ===== */
+#filtro-container {
+  text-align: center;
+  padding: 20px;
+}
+
+#filtro-projetos {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* ===== Container de projetos ===== */
+#projetos {
+  display: flex;               /* coloca os 3 cards lado a lado */
+  justify-content: center;     /* centraliza horizontalmente */
+  align-items: flex-start;
+  flex-wrap: wrap;             /* quebra linha em telas pequenas */
+  gap: 20px;                   /* espaço entre os cards */
+  padding: 40px;
+}
+
+/* ===== Card de projeto ===== */
+.projeto {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.2s ease;
+}
+
+.projeto:hover {
+  transform: scale(1.03);
+}
+
+/* ===== Informações do projeto ===== */
+.projeto-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.projeto-info h2 {
+  color: #007BFF;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.projeto-info p {
+  margin-bottom: 8px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 900px) {
+  #projetos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projeto {
+    width: 90%;
+
+  }
+
+
+}
+
+

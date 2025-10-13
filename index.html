@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Voluntariado</title>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS separado só para imagens -->
+    <link rel="stylesheet" href="css/img.css">
+</head>
+<body>
+    <header>
+        <h1>Portal do Voluntariado</h1>
+        <nav>
+            <a href="index.html" class="menu">home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="filtro-container">
+            <input type="text" id="filtro-projetos" placeholder="Buscar projeto...">
+        </section>
+
+        <section id="projetos">
+            <article class="projeto">
+                <img src="img/praia.png" alt="Limpeza de Praias">
+                <div class="projeto-info">
+                    <h2>Limpeza de Praias</h2>
+                    <p>Sábado, 05/10/2025</p>
+                    <p>Participe de uma ação ambiental para limpar praias da cidade.</p>
+                    <a href="cadastro.php?projeto=Limpeza+de+Praias" class="btn">Tenho interesse</a>
+                </div>
+            </article>
+
+            <article class="projeto">
+                <img src="img/doacao.png" alt="Doação de Alimentos">
+                <div class="projeto-info">
+                    <h2>Doação de Alimentos</h2>
+                    <p>Domingo, 06/10/2025</p>
+                    <p>Ajude a distribuir cestas básicas para famílias carentes.</p>
+                    <a href="cadastro.php?projeto=Doacao+de+Alimentos" class="btn">Tenho interesse</a>
+                </div>
+            </article>
+
+            <article class="projeto">
+                <img src="img/reforco.png" alt="Aulas de Reforço">
+                <div class="projeto-info">
+                    <h2>Aulas de Reforço</h2>
+                    <p>Segunda, 07/10/2025</p>
+                    <p>Ensine crianças carentes em um projeto de reforço escolar.</p>
+                    <a href="cadastro.php?projeto=Aulas+de+Reforco" class="btn">Tenho interesse</a>
+                </div>
+            </article>
+        </section>
+
+        <p id="contador"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
