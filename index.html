@@ -6,20 +6,22 @@
     <title>Portal do Voluntariado</title>
 
     <!-- CSS principal -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- CSS separado só para imagens -->
-    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="./css/img.css">
 </head>
 <body>
     <header>
         <h1>Portal do Voluntariado</h1>
         <nav>
+            <!-- Link simples para a própria home -->
             <a href="index.html" class="menu">home</a>
         </nav>
     </header>
 
     <main>
+        <!-- Lista fixa de projetos (conteúdo estático) -->
         <section id="filtro-container">
             <input type="text" id="filtro-projetos" placeholder="Buscar projeto...">
         </section>
@@ -41,6 +43,7 @@
                     <h2>Doação de Alimentos</h2>
                     <p>Domingo, 06/10/2025</p>
                     <p>Ajude a distribuir cestas básicas para famílias carentes.</p>
+                    <!-- Envia o nome do projeto via GET para cadastro.php -->
                     <a href="cadastro.php?projeto=Doacao+de+Alimentos" class="btn">Tenho interesse</a>
                 </div>
             </article>
@@ -55,10 +58,10 @@
                 </div>
             </article>
         </section>
-
+         <!-- Aqui o JS vai mostrar a quantidade de projetos visíveis -->
         <p id="contador"></p>
     </main>
-
+      <!-- JS responsável pelo filtro de projetos e contador --> 
     <script type="text/javascript" src="./Js/script.js"></script>
 </body>
 </html>
